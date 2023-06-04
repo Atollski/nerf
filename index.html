@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pew</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css"/>
+		<script src="common.js" defer></script>
+		<script src="menu.js" defer></script>
+		<script src="hud.js" defer></script>
+		<!--<script src="old.js" defer></script>-->
+	</head>
+	
+	<body onresize="hud.render();">
+		<video class="layer" autoplay></video>
+		<div class="layer vcenter">
+			<canvas></canvas>	
+		</div>
+		
+<!--		<br /><textarea oninput="setCalc(this.value);">0</textarea>
+<li>
+				<button onclick="init({camera: 'off'});" value="Camera">CAMERA</button>
+			</li>
+			<div id="error"></div>-->
+		<ul id="menu">
+			<li>Doot1</li>
+			<li class="active">Doot2
+				<ul>
+					<li>Sub2</li>
+					<li>Sub3
+						<ul>
+							<li>Sub2 1</li>
+							<li>Sub2 2</li>
+							<li>Sub2 3</li>
+						</ul>
+					</li>
+					<li>Sub4</li>
+				</ul>
+			</li>
+			<li>Doot3</li>
+		</ul>
+	</body>
+</html>
